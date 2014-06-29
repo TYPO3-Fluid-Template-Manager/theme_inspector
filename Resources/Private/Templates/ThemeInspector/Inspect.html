@@ -1,0 +1,97 @@
+{namespace sourcecode=TYPO3\SemaSourcecode\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <style>
+        table {
+            width: 100%;
+        }
+        .first {
+            width: 20%;
+            background-color: #EEEEEE;
+        }
+        th {
+            width: 20%;
+            background-color: #EEEEEE;
+        }
+        th,
+        td {
+            vertical-align: top;
+        }
+        pre {
+            overflow: auto;
+        }
+    </style>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="first">
+                </th>
+                <th>
+                    <h2>Theme-Infrastructure</h2>
+                    <h3>themes-Extension</h3>
+                </th>
+                <th>
+                    <h2>Theme-Definitions</h2>
+                    <h3>themes_gridelements-Extension</h3>
+                </th>
+                <th>
+                    <h2>Theme-Base for Bootstrap</h2>
+                    <h3>{themeBase}-Extension</h3>
+                </th>
+                <th>
+                    <h2>Specialised Bootstrap-Theme</h2>
+                    <h3>{themeSlate}-Extension</h3>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="first">Constants</td>
+                <td>
+                    <h3>Configuration/TypoScript/constants.txt</h3>
+                    <sourcecode:sourcecode code="{themes_constants_txt}" lang="typoscript"/>
+                </td>
+                <td>
+                    <h3>Configuration/TypoScript/constants.txt</h3>
+                    <sourcecode:sourcecode code="{themes_gridelements_constants_txt}" lang="typoscript"/>
+                </td>
+                <td>
+                    <h3>Configuration/TypoScript/constants.txt</h3>
+                    <sourcecode:sourcecode code="{theme_bootstrap_constants_txt}" lang="typoscript"/>
+                </td>
+                <td>
+                    <h3>Configuration/TypoScript/constants.txt</h3>
+                    <sourcecode:sourcecode code="{theme_bootstrap_slate_constants_txt}" lang="typoscript"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="first">Setup</td>
+                <td>
+                    <h3>Configuration/TypoScript/setup.txt</h3>
+                    <sourcecode:sourcecode code="{themes_setup_txt}" lang="typoscript"/>
+                </td>
+                <td>
+                    <h3>Configuration/TypoScript/setup.txt</h3>
+                    <sourcecode:sourcecode code="{themes_gridelements_setup_txt}" lang="typoscript"/>
+                </td>
+                <td>
+                    <h3>Configuration/TypoScript/setup.txt</h3>
+                    <sourcecode:sourcecode code="{theme_bootstrapp_setup_txt}" lang="typoscript"/>
+                </td>
+                <td>
+                    <h3>Configuration/TypoScript/setup.txt</h3>
+                    <sourcecode:sourcecode code="{theme_bootstrap_slate_setup_txt}" lang="typoscript"/>
+                </td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+
+
+</f:section>

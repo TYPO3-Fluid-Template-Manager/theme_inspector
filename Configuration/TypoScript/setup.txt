@@ -1,0 +1,19 @@
+plugin.tx_themeinspector {
+	view {
+		templateRootPath = {$plugin.tx_themeinspector.view.templateRootPath}
+		partialRootPath = {$plugin.tx_themeinspector.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_themeinspector.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_themeinspector.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	settings {
+	
+	   themeName = theme_bootstrap
+	
+	}
+}

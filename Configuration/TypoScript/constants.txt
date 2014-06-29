@@ -1,0 +1,14 @@
+plugin.tx_themeinspector {
+	view {
+		# cat=plugin.tx_themeinspector/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:theme_inspector/Resources/Private/Templates/
+		# cat=plugin.tx_themeinspector/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:theme_inspector/Resources/Private/Partials/
+		# cat=plugin.tx_themeinspector/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:theme_inspector/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_ftmserver//a; type=string; label=Default storage PID
+		storagePid = 0
+	}
+}
