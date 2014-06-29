@@ -67,29 +67,18 @@ class ThemeInspectorController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
         $this->view->assign("themes_constants_txt", $this->getFileContent('EXT:themes/Configuration/TypoScript/constants.txt'));
         $this->view->assign("themes_setup_txt",     $this->getFileContent('EXT:themes/Configuration/TypoScript/setup.txt'));
 
-
         $this->view->assign("themes_gridelements_constants_txt", $this->getFileContent('EXT:themes_gridelements/Configuration/TypoScript/constants.txt'));
         $this->view->assign("themes_gridelements_setup_txt",     $this->getFileContent('EXT:themes_gridelements/Configuration/TypoScript/setup.txt'));
 
+        $this->view->assign("theme_base_constants_txt", $this->getFileContent('EXT:'.$themeBase.'/Configuration/TypoScript/constants.txt'));
+        $this->view->assign("theme_base_setup_txt",     $this->getFileContent('EXT:'.$themeBase.'/Configuration/TypoScript/setup.txt'));
 
-
-        $this->view->assign("theme_bootstrap_constants_txt", $this->getFileContent('EXT:'.$themeBase.'/Configuration/TypoScript/constants.txt'));
-        $this->view->assign("theme_bootstrap_setup_txt",     $this->getFileContent('EXT:'.$themeBase.'/Configuration/TypoScript/setup.txt'));
-
-        $this->view->assign("theme_bootstrap_slate_constants_txt", $this->getFileContent('EXT:'.$themeSlate.'/Configuration/TypoScript/constants.txt'));
-        $this->view->assign("theme_bootstrap_slate_setup_txt",     $this->getFileContent('EXT:'.$themeSlate.'/Configuration/TypoScript/setup.txt'));
+        $this->view->assign("theme_slate_constants_txt", $this->getFileContent('EXT:'.$themeSlate.'/Configuration/TypoScript/constants.txt'));
+        $this->view->assign("theme_slate_setup_txt",     $this->getFileContent('EXT:'.$themeSlate.'/Configuration/TypoScript/setup.txt'));
 
 
         $this->view->assign("themeBase", $themeBase);
         $this->view->assign("themeSlate", $themeSlate);
-
-//        $this->view->assign("files", $files);
-//        $this->view->assign("filterActiveKey", $filterActiveKey);
-//        $this->view->assign("filterActive", $filterActive);
-//        $this->view->assign("filterSelect", $filterSelect);
-//        $this->view->assign("objectTypes", $objectTypes);
-//        $this->view->assign("flashMessages", $flashMessages);
-//        $this->view->assign("deleteConfirmText", $deleteConfirmText);
 
     }
 

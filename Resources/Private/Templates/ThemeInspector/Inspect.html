@@ -10,6 +10,7 @@
         .first {
             width: 20%;
             background-color: #EEEEEE;
+
         }
         th {
             width: 20%;
@@ -22,6 +23,24 @@
         pre {
             overflow: auto;
         }
+        .rotate {
+
+            /* Safari */
+            -webkit-transform: rotate(-90deg);
+
+            /* Firefox */
+            -moz-transform: rotate(-90deg);
+
+            /* IE */
+            -ms-transform: rotate(-90deg);
+
+            /* Opera */
+            -o-transform: rotate(-90deg);
+
+            /* Internet Explorer */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+        }
     </style>
 
     <table>
@@ -29,7 +48,7 @@
             <tr>
                 <th class="first">
                 </th>
-                <th>
+                <th>h
                     <h2>Theme-Infrastructure</h2>
                     <h3>themes-Extension</h3>
                 </th>
@@ -50,7 +69,7 @@
 
         <tbody>
             <tr>
-                <td class="first">Constants</td>
+                <td class="first"><h2 class="rotate">Constants</h2></td>
                 <td>
                     <h3>Configuration/TypoScript/constants.txt</h3>
                     <sourcecode:sourcecode code="{themes_constants_txt}" lang="typoscript"/>
@@ -61,15 +80,15 @@
                 </td>
                 <td>
                     <h3>Configuration/TypoScript/constants.txt</h3>
-                    <sourcecode:sourcecode code="{theme_bootstrap_constants_txt}" lang="typoscript"/>
+                    <sourcecode:sourcecode code="{theme_base_constants_txt}" lang="typoscript"/>
                 </td>
                 <td>
                     <h3>Configuration/TypoScript/constants.txt</h3>
-                    <sourcecode:sourcecode code="{theme_bootstrap_slate_constants_txt}" lang="typoscript"/>
+                    <sourcecode:sourcecode code="{theme_slate_constants_txt}" lang="typoscript"/>
                 </td>
             </tr>
             <tr>
-                <td class="first">Setup</td>
+                <td class="first"><h2 class="rotate">Setup</h2></td>
                 <td>
                     <h3>Configuration/TypoScript/setup.txt</h3>
                     <sourcecode:sourcecode code="{themes_setup_txt}" lang="typoscript"/>
@@ -80,11 +99,11 @@
                 </td>
                 <td>
                     <h3>Configuration/TypoScript/setup.txt</h3>
-                    <sourcecode:sourcecode code="{theme_bootstrapp_setup_txt}" lang="typoscript"/>
+                    <sourcecode:sourcecode code="{theme_base_setup_txt}" lang="typoscript"/>
                 </td>
                 <td>
                     <h3>Configuration/TypoScript/setup.txt</h3>
-                    <sourcecode:sourcecode code="{theme_bootstrap_slate_setup_txt}" lang="typoscript"/>
+                    <sourcecode:sourcecode code="{theme_slate_setup_txt}" lang="typoscript"/>
                 </td>
             </tr>
         </tbody>
